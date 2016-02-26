@@ -16,14 +16,13 @@ _Add a stylist, and then later add clients to that stylist. The main objective o
         * _Download and install [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)_
         * _Download and install [Java JRE](http://www.java.com/en/)_
     * _For Gradle: if you are using Homebrew on Mac:_
-        * _$ brew update_
-        * _$ brew install gradle_
-    * _Download and install Postgresql_*
+        -$ brew update_
+        -$ brew install gradle_
+    * _Download and install Postgresql_
 * _Open a command line, and run postgres to enable databases locally_
-* _CREATE DATABASE hair_salon;
-  * _CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
-  * _CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);
-* _CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
+ -CREATE DATABASE hair_salon;
+ -CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
+ -CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);  -CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 
 * _In the top level of the cloned directory, run the following command in your terminal:_
     * _$ gradle run_
