@@ -20,9 +20,10 @@ _Add a stylist, and then later add clients to that stylist. The main objective o
         -$ brew install gradle_
     * _Download and install Postgresql_
 * _Open a command line, and run postgres to enable databases locally_
- -CREATE DATABASE hair_salon;
- -CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
- -CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);  -CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
+ 1. CREATE DATABASE hair_salon;
+ 2. CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
+ 3. CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);  
+ 4. CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 
 * _In the top level of the cloned directory, run the following command in your terminal:_
     * _$ gradle run_
