@@ -18,12 +18,12 @@ _Add a stylist, and then later add clients to that stylist. The main objective o
     * _For Gradle: if you are using Homebrew on Mac:_
         * _$ brew update_
         * _$ brew install gradle_
-    *_Download and install Postgresql_*
-*_Open a command line, and run postgres to enable databases locally_
-*_CREATE DATABASE hair_salon;
-  *_CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
-  *_CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);
-*_CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
+    * _Download and install Postgresql_*
+* _Open a command line, and run postgres to enable databases locally_
+* _CREATE DATABASE hair_salon;
+  * _CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
+  * _CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylistId int);
+* _CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 
 * _In the top level of the cloned directory, run the following command in your terminal:_
     * _$ gradle run_
